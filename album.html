@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Альбом | Алексей Савчук - Фотограф</title>
+    <script src="https://kit.fontawesome.com/9aac35a413.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/album.css">
+    <link rel="stylesheet" href="css/popup.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="/" class="logo">Алексей Савчук</a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html#portfolio" class="nav__link">Портфолио</a></li>
+                        <li class="nav__item"><a href="index.html#about" class="nav__link">Обо мне</a></li>
+                        <li class="nav__item"><a href="index.html#testimonials" class="nav__link">Отзывы</a></li>
+                        <li class="nav__item"><a href="index.html#contacts" class="nav__link">Контакты</a></li>
+                    </ul>
+                    <button class="btn btn--contact-sidebar" id="contactBtnSidebar">
+                        <i class="fas fa-user"></i> Связаться
+                    </button>
+                </nav>
+                <div class="overlay"></div>
+                <div class="social">
+                    <a href="https://t.me/Otherwed" class="social__link"><i class="fas fa-paper-plane"></i></a>
+                    <a href="https://wa.me/+79217986937" class="social__link"><i class="fab fa-whatsapp"></i></a>
+                    <a href="tel:+79217986937" class="social__link"><i class="fas fa-phone"></i></a>
+                </div>
+                <button class="btn btn--contact-header" id="contactBtnHeader">
+                    <i class="fas fa-user"></i> Связаться
+                </button>
+                <button class="burger" aria-label="Меню">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Album Header -->
+    <section class="album-header">
+        <img src="" alt="" class="album-header__bg" id="albumHeaderBg">
+        <div class="container">
+            <div class="album-header__content" data-aos="fade-up">
+                <h1 class="album-header__title" id="albumTitle">Загрузка альбома...</h1>
+                <div class="album-header__buttons">
+                    <a href="index.html#portfolio" class="btn btn--back">
+                        <i class="fas fa-arrow-left"></i> Назад к портфолио
+                    </a>
+                    <button class="btn btn--contact" id="contactBtn">
+                        <i class="fas fa-user"></i> Связаться
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Album Gallery -->
+    <section class="album-gallery">
+        <div class="container">
+            <!-- Swiper gallery -->
+            <div class="swiper album-swiper" data-aos="fade-up">
+                <div class="swiper-wrapper" id="albumGallery">
+                    <!-- Photos will be loaded dynamically via JavaScript -->
+                    <div class="swiper-slide loading">Загрузка фотографий...</div>
+                </div>
+                <!-- Add navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- Add pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add photo counter for mobile -->
+                <div class="swiper-counter"></div>
+            </div>
+            <!-- <div class="gallery-contact">
+                <button class="btn btn--contact-large" id="contactBtnBottom">
+                    <i class="fas fa-user"></i> Связаться с фотографом
+                </button>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta__content" data-aos="fade-up">
+                <h2 class="cta__title">Хотите заказать фотосессию?</h2>
+                <p class="cta__text">Свяжитесь со мной, чтобы обсудить детали вашего проекта</p>
+                <div id="contactBtnBottom" class="btn btn--primary">Связаться</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <a href="/" class="logo">Алексей Савчук</a>
+                    <p>Профессиональный фотограф в Санкт-Петербурге</p>
+                </div>
+                <div class="footer__nav">
+                    <h3>Навигация</h3>
+                    <ul>
+                        <li><a href="index.html#portfolio">Портфолио</a></li>
+                        <li><a href="index.html#about">Обо мне</a></li>
+                        <li><a href="index.html#testimonials">Отзывы</a></li>
+                        <li><a href="index.html#contacts">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__social">
+                    <h3>Социальные сети</h3>
+                    <div class="social">
+                        <a href="#" class="social__link"><i class="fas fa-camera"></i></a>
+                        <a href="#" class="social__link"><i class="fas fa-globe"></i></a>
+                        <a href="#" class="social__link"><i class="fas fa-paper-plane"></i></a>
+                        <a href="#" class="social__link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Алексей Савчук. Все права защищены.</p>
+                <a href="https://t.me/yanakulov" target="_blank"><img src="assets/yan-logo.png" alt="Yan" class="footer__yan-logo"></a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox"></div>
+
+    <!-- Contact Popup -->
+    <div class="contact-popup" id="contactPopup">
+        <div class="contact-popup__content">
+            <button class="contact-popup__close" aria-label="Закрыть"><i class="fas fa-times"></i></button>
+            <div class="contact-popup__profile">
+                <div class="contact-popup__avatar">
+                    <img src="assets/leha.jpg" alt="Алексей Савчук" class="contact-popup__img">
+                </div>
+                <h3 class="contact-popup__name">Алексей Савчук</h3>
+                <p class="contact-popup__title">Фотограф | Санкт-Петербург</p>
+            </div>
+            <div class="contact-popup__buttons">
+                <a href="https://t.me/Otherwed" class="contact-popup__btn contact-popup__btn--telegram">
+                    <i class="fab fa-telegram-plane"></i> Telegram
+                </a>
+                <a href="https://wa.me/+79217986937" class="contact-popup__btn contact-popup__btn--whatsapp">
+                    <i class="fab fa-whatsapp"></i> WhatsApp
+                </a>
+                <a href="mailto:info@savchuk-photo.ru" class="contact-popup__btn contact-popup__btn--email">
+                    <i class="fas fa-envelope"></i> Email
+                </a>
+                <a href="tel:+79217986937" class="contact-popup__btn contact-popup__btn--phone">
+                    <i class="fas fa-phone"></i> Позвонить
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/album.js"></script>
+</body>
+</html>
